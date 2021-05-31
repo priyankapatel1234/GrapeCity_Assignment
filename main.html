@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    
+    <div id= "date_block">
+        <h1 id="heading">ORDER</h1>
+        <label id="date_text">Date:</label>
+        <input type ="date" id="date" value="today()">
+
+        <label id="time_text">Time:</label>
+        <input type ="time" id="time" value="todaytime()">
+
+        <label for="Location" id="location_text">Location:</label>
+        <select name="Location" id="location">
+            
+          <option value="Patna">Patna</option>
+          <option value="New Delhi">New Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Kolkata">Kolkata</option>
+        </select>
+        <div id="filter_block">
+            <div id="filter_heading"><h3>Filter</h3></div>
+            <input type="checkbox" id="Maggie" value="items" onclick="filtercheckbox()">
+            <label >Maggie</label><br/>
+            <input type="checkbox" id="choclate" value="items" onclick="filtercheckbox()">
+            <label >Choclate</label><br/>
+            <input type="checkbox" id="toffee" value="items" onclick="filtercheckbox()">
+            <label >Toffee</label><br/>
+            <input type="checkbox" id="Blanket" value="items" onclick="filtercheckbox()">
+            <label >Blanket</label><br/>
+
+            
+        </div> 
+        
+        <div id="displaydetail_maggiee" >
+            <p id="perunit_maggiee"></p>
+            <input type="button" id="decrease" value="-" onclick="decrease_maggiee()">
+            <input type="number" id="Quantity_maggiee" value="0"class="Quantity"> 
+            <input type="button" id="increase" value="+" onclick="increase_maggiee()">
+            <input type="button" id="Add" value="Add" >
+           
+        </div>
+        <div id="displaydetail_choclate" >
+            <p id="perunit_choclate"></p>
+            <input type="button" id="decrease" value="-" onclick="decrease_choclate()">
+            <input type="number" id="Quantity_choclate" value="0" class="Quantity"> 
+            <input type="button" id="increase" value="+" onclick="increase_choclate()">
+            <input type="button" id="Add" value="Add" >
+           
+        </div>
+        <div id="displaydetail_toffee" >
+            <p id="perunit_toffee"></p>
+            <input type="button" id="decrease" value="-" onclick="decrease_toffee()">
+            <input type="number" id="Quantity_toffee" value="0" class="Quantity"> 
+            <input type="button" id="increase" value="+" onclick="increase_toffee()">
+            <input type="button" id="Add" value="Add" >
+            
+        </div>
+
+        <div id="displaydetail_blanket" >
+            <p id="perunit_blanket"></p>
+            <input type="button" id="decrease" value="-" onclick="decrease_blanket()">
+            <input type="number" id="Quantity_blanket" value="0" class="Quantity"> 
+            <input type="button" id="increase" value="+" onclick="increase_blanket()">
+            <input type="button" id="Add" value="Add" >
+            
+            
+        </div>
+        <h3 id="Total_Cost"></h3>
+        <input type="button" id="Submit" value="Submit" onclick="totalcost()">
+   
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
